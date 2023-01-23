@@ -8,11 +8,11 @@ meuArray.forEach(letra => {
             if(letra == " ") {
                 break
             }
-            console.log(`'${letra}' tem letra repetida`)
             letrasRepetidas.push(letra)
             break
         }
     }
 })
 
-console.log(letrasRepetidas)
+console.log([... new Set(letrasRepetidas)]) // as letras repetidas
+console.log(letrasRepetidas) // quantas vezes repetiu
